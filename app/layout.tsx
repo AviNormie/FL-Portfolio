@@ -26,11 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="flex h-screen w-full bg-black">
+        <div className="flex h-screen w-full bg-[#141312]">
           {/* Sidebar for sm+ screens only */}
           <aside className="hidden sm:flex w-[35%] items-center justify-center overflow-hidden bg-black">
-            <div className="scale-[0.55]">
-              <My3DScene width="950px" height="1000" />
+            <div className="">
+              <My3DScene width="880px" height="750" />
             </div>
             <div className=""></div>
           </aside>
