@@ -1,8 +1,8 @@
 import React from 'react';
 
-const SoftwareEngineerPage = () => {
+const Hero = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black text-white p-6">
+    <div className="flex justify-center items-center min-h-screen bg-[#141312] text-white p-6">
       <div className="w-3/4">
         <div className="mb-16">
           <h1 className="text-7xl font-bold text-white mb-2">SOFTWARE</h1>
@@ -40,9 +40,9 @@ const SoftwareEngineerPage = () => {
             <div className="absolute inset-0 opacity-20">
               {/* Orange background with curved lines */}
               <div className="absolute top-0 left-0 w-full h-1/2 bg-contain bg-no-repeat" 
-                   style={{backgroundImage: "url('/left1.png')"}}></div>
+                   style={{backgroundImage: "url('/left1.svg')"}}></div>
               <div className="absolute bottom-0 left-0 w-full h-1/2 bg-contain bg-no-repeat" 
-                   style={{backgroundImage: "url('/left2.png')"}}></div>
+                   style={{backgroundImage: "url('/left2.svg')"}}></div>
             </div>
             <div className="relative z-10">
               <div className="mb-6">
@@ -65,10 +65,9 @@ const SoftwareEngineerPage = () => {
           <div className="relative rounded-lg p-8 bg-lime-300 overflow-hidden">
             <div className="absolute inset-0 opacity-20">
               {/* Lime background with angular lines */}
-              <div className="absolute top-0 left-0 w-full h-1/2 bg-contain bg-no-repeat" 
-                   style={{backgroundImage: "url('/right.png')"}}></div>
-              <div className="absolute bottom-0 left-0 w-full h-1/2 bg-contain bg-no-repeat" 
-                   style={{backgroundImage: "url('/right2.png')"}}></div>
+              <div className="absolute top-0 left-0 w-full bg-contain bg-no-repeat z-96" 
+                   style={{backgroundImage: "url('/right.svg')"}}></div>
+            
             </div>
             <div className="relative z-10">
               <div className="mb-6">
@@ -93,4 +92,4 @@ const SoftwareEngineerPage = () => {
   );
 };
 
-export default SoftwareEngineerPage;
+export default Hero;
