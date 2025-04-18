@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import My3DScene from "@/components/My3DScene";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +25,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div className="flex h-screen w-full bg-black">
+          {/* Sidebar for sm+ screens only */}
+          <aside className="hidden sm:flex w-[35%] items-center justify-center overflow-hidden bg-black">
+            <div className="scale-[0.55]">
+              <My3DScene width="950px" height="1000" />
+            </div>
+            <div className=""></div>
+          </aside>
+
+
+
+          {/* Main content takes full width on small screens */}
+          <main className="w-full sm:w-[65%] p-4 overflow-y-auto">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );
