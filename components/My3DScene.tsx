@@ -52,7 +52,7 @@ export default function My3DScene({ width, height }: My3DSceneProps) {
       overflow: 'hidden' // Prevents any overflow
     }}>
       <Spline
-        scene="https://prod.spline.design/S0LKeSK51tIYS7Kr/scene.splinecode"
+        scene="main1.spline"
         onLoad={handleLoad}
       />
     </div>
