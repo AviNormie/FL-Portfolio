@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="flex h-screen w-full bg-black">
+        <div className="flex h-screen w-full bg-[#141312]">
           {/* Sidebar for sm+ screens only */}
           <aside className="hidden sm:block fixed left-0 top-0 h-screen w-[35%] bg-black z-10">
             <div className="relative h-full flex flex-col items-center justify-center">
