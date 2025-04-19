@@ -81,7 +81,7 @@ const ContactUsPage = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black text-white p-6">
+    <div className="flex justify-center items-center min-h-screen py-6 text-white ">
       <div className="w-3/4">
         <div className="mb-16">
           <h1 className="text-7xl font-bold text-white mb-2">GET IN</h1>
