@@ -17,11 +17,17 @@ const RecentProjects = () => {
       title: "Create a Landing Page That Performs Great",
       description: "Whether you work in marketing, sales, or product design, you understand the importance of a quality landing page. Landing pages are standalone websites used to generate leads or sales—in other words they help you increase your revenue.",
       image: "/api/placeholder/400/300"
-    }
+    },
+    {
+      id: 3,
+      title: "How to Create a Website That Converts",
+      description: "A website is a powerful tool for any business. It can help you reach new customers, generate leads, and increase sales. But not all websites are created equal. To be effective, your website must be designed with conversion in mind.",
+      image: "/api/placeholder/400/300"
+    },
   ];
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black text-white p-6">
+    <div className="flex justify-center items-center min-h-screen text-white py-6">
       <div className="w-3/4">
         <div className="mb-16">
           <h1 className="text-7xl font-bold text-white mb-2">RECENT</h1>

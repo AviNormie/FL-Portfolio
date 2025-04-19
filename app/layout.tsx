@@ -1,7 +1,9 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import My3DScene from "@/components/My3DScene";
+import ProjectCardCarousel from "@/components/ProjectCardCarousel";
+import { projects } from "@/constants/projectDetails"; // Import your projects from constants
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,25 +30,11 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="flex h-screen w-full bg-[#141312]">
           {/* Sidebar for sm+ screens only */}
-          <aside className="hidden sm:block fixed left-0 top-0 h-screen w-[35%] bg-black z-10">
-            <div className="relative h-full flex flex-col items-center justify-center">
-              
-              {/* Black overlay container */}
-              {/* <div className="absolute bottom-[204px] left-[381px] w-16 h-[17px] bg-green-500 z-20" /> */}
-              
-              {/* Sidebar content below overlay */}
-              <div className="z-10  text-white">
-                {/* <h2 className="text-xl mb-4">Check this out baby</h2> */}
-
-                <div className="scale-[0.55]">
-                  <My3DScene width="850px" height="1000"   />
-                </div>
-              </div>
-            </div>
+          <aside className="hidden sm:block fixed left-0 top-0 h-screen w-[35%] bg-[#141312] z-10">
+            <ProjectCardCarousel projects={projects} />
           </aside>
 
-
-          <main className="w-full sm:ml-[35%] p-4 overflow-y-auto">
+          <main className="w-full sm:ml-[35%] overflow-y-auto">
             {children}
           </main>
         </div>

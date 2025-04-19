@@ -64,7 +64,7 @@ const ExperienceAndTools = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black text-white p-6">
+    <div className="flex justify-center items-center min-h-screen py-6 text-white p-6">
       <div className="w-3/4">
         {/* Experience Section */}
         <div className="mb-20">
